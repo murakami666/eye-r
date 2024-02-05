@@ -1,0 +1,11 @@
+
+/** page **/
+
+#page{
+	width: auto;
+	margin: 0;
+}
+
+#info_list2.list dt:nth-of-type(1), #info_list2.list dd:nth-of-type(1){	width: 45px;}
+#info_list2.list dt:nth-of-type(2), #info_list2.list dd:nth-of-type(2){	width: 145px;}
+#info_list2.list dt:nth-of-type(3), #info_list2.list dd:nth-of-type(3){	width: calc(100% - 190px);}

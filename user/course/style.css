@@ -1,0 +1,383 @@
+
+/** course **/
+
+#course{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+/** pub_box **/
+.pub_box{
+	font-size: 0;
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+	box-sizing: border-box;
+}
+
+.pub_box ul{
+	margin: 30px auto;
+	width: 90%;
+	max-width: 750px;
+	display: block;
+}
+
+.pub_box li{
+	margin-bottom: 10px;
+	width: 100%;
+	display: block;
+}
+
+.pub_box li label{
+	cursor: pointer;
+}
+
+.pub_box li .pub_label{
+	width: 100%;
+	display: table;
+	border: 1px solid #ccc;
+	padding: 10px 5px;
+	border-radius: 5px;
+}
+
+.pub_box li label.pub_label:hover{
+	background: #e7fbed;
+	border-color: #fff;
+}
+
+.pub_box li label.pub_label:hover div:nth-child(2){
+	background: #fff !important;
+}
+
+.pub_box li .pub_label div{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.pub_box li .pub_label div:nth-child(1){
+	width: 60px;
+	height: 55px;
+	text-align: center;
+}
+
+.pub_box li .pub_label div:nth-child(1) span.check_m{
+	width: 30px;
+	height: 12px;
+	border-left: 5px solid #ff0000;
+	border-bottom: 5px solid #ff0000;
+	transform: rotate(-45deg);
+	display: inline-block;
+}
+
+.pub_box li .pub_label div:nth-child(1) input[type="radio"]{
+	opacity: 0;
+	width: 0;
+	margin: 0;
+}
+
+.pub_box li .pub_label:hover div:nth-child(1) > span.dummy{
+    transform: scale(1.2);
+}
+.pub_box li .pub_label div:nth-child(1) input[type="radio"]:focus + span.dummy {
+	background: #FFFFFF;
+}
+.pub_box li .pub_label div:nth-child(1) input[type="radio"]:checked + span.dummy {
+	background: #ff0099;
+}
+.pub_box li .pub_label div:nth-child(1) input[type="radio"]:checked + span.dummy::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #FFFFFF;
+}
+span.dummy {
+	position: relative;
+	top: -5px;
+	left: 13px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: rgba(0,0,0,.15);
+	transition: all .15s linear;
+}
+
+.pub_box li .pub_label div:nth-child(2){
+	width: 240px;
+	padding: 10px;
+	background: #f5f5f5;
+	text-align: left;
+	border-radius: 3px;
+}
+
+.pub_box li .pub_label div:nth-child(2) span{
+	font-size: 24px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+.pub_box li .pub_label div:nth-child(3){
+	width: auto;
+	color: #ff3333;
+	text-align: left;
+	padding: 0 10px;
+}
+
+.pub_box li .pub_label div:nth-child(3) span{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 16px;
+	border: 2px solid #ff3333;
+	border-radius: 3px;
+	text-align: center;
+	vertical-align: middle;
+	margin-right: 5px;
+	padding: 2px;
+	font-weight: bold;
+}
+
+.pub_box li .pub_label div:nth-child(3) em,
+.pub_box li .pub_label div:nth-child(3) font{
+    font-size: 32px;
+    line-height: 32px;
+	font-weight: bold;
+	font-style: normal;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.pub_box li .pub_label div:nth-child(3) font{
+	margin-left: 7px;
+}
+
+.pub_box li .pub_label div:nth-child(3) em font,
+.pub_box li .pub_label div:nth-child(3) font font{
+	font-size: 22px;
+    line-height: 22px;
+	margin-left: 0;
+}
+
+.pub_box li .pub_label div:nth-child(3) p{
+	font-size: 12px;
+	line-height: 16px;
+	padding: 3px 0 0;
+	color: #333;
+}
+
+.pub_box li .pub_label div:nth-child(3) p i{
+	display: inline-block;
+	vertical-align: top;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 16px;
+	color: #fff;
+	background: #333;
+	margin: 0 5px 0 0;
+	padding: 0 7px;
+}
+
+/*選択状態*/
+.pub_box li .pub_label.check{
+	border-color: #fff;
+	background: #e7fbed;
+	box-shadow: 0px 4px 4px 1px rgba(234,218,228,0.9);
+}
+
+.pub_box li div:nth-child(2).course1{
+	background: #ffe8e8;
+}
+
+.pub_box li div:nth-child(2).course2{
+	background: #fff1e6;
+}
+
+.pub_box li div:nth-child(2).course3{
+	background: #fff2c9;
+}
+
+.pub_box li .pub_label.check div:nth-child(2){
+	color: #fff;
+	background: #46b568;
+}
+
+
+
+/*割引*/
+.pub_box li .pub_label div:nth-of-type(3).dis em{
+	text-decoration: line-through;
+}
+
+/*選択済み*/
+.pub_text{
+	font-size: 18px;
+	line-height: 24px;
+	text-align: center;
+	padding: 30px 0 10px;
+}
+
+div.pub_box{
+	margin-top: 0;
+}
+
+div.pub_box li .pub_label:not(.disabled,.check) div:nth-child(1) span:not(.check_m){
+	display: inline-block;
+    color: #ababab;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+/*受付停止*/
+.pub_box li .pub_label.disabled{
+	cursor: default;
+	background: #ececec;
+	border-color: #ececec;
+}
+
+.pub_box li .pub_label.disabled div:nth-child(1){
+	text-align: left;
+}
+
+.pub_box li .pub_label.disabled div:nth-child(1) span{
+	width: 50px;
+	height: 50px;
+	border:3px solid #aaaaaa;
+	border-radius: 25px;
+	display: inline-block;
+	color: #ababab;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: bold;
+	padding-top: 6px;
+	padding-left: 4px;
+	margin-left: 2px;
+	transform: rotate(-15deg);
+}
+
+.pub_box li .pub_label.disabled div:nth-child(2){
+	background: #dfdfdf;
+	color: #ababab;
+}
+
+.pub_box li .pub_label.disabled div:nth-child(3) p{
+	color: #ababab;
+}
+.pub_box li .pub_label.disabled div:nth-child(3) p i{
+	background: #ababab;
+	color: #ececec;
+}
+
+.pub_box li .pub_label.disabled div:nth-child(3) span,
+.pub_box li .pub_label.disabled div:nth-child(3) font,
+.pub_box li .pub_label.disabled div:nth-child(3) em{
+	color: #ababab;
+	border-color: #ababab;
+}
+
+/*確認画面*/
+
+
+.arrow{
+    position: relative;
+    display: inline-block;
+    height: 40px;
+}
+.arrow:before{
+	content: '';
+	width: 40px;
+	height: 25px;
+	background: #ff0000;
+	position: absolute;
+	top: 0;
+	left: calc(50% - 20px);
+}
+
+.arrow:after{
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 42.5px 0 42.5px;
+	border-color: #ff0000 transparent transparent transparent;
+	position: absolute;
+	top: 25px;
+	left: calc(50% - 42.5px);
+}
+
+#check_form .pub_label .update{
+	font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+/**/
+.bottom_text{
+	font-size: 14px;
+	line-height: 18px;
+	padding: 20px 0 40px;
+}
+
+.pub_box .out{
+	font-size: 12px !important;
+	line-height: 20px !important;
+	text-align: center;
+	margin: 30px 0 0 0 !important;
+}
+.pub_box .out a{	color: #333 !important;}
+
+
+	#course{
+		width: auto;
+		margin: 0;
+	}
+	.pub_box li .pub_label{
+		display: flex;
+		align-items: flex-start;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		padding-bottom: 0;
+	}
+	span.dummy{
+		top: -9px;
+		left: 5px;
+	}
+	.pub_box li .pub_label div{
+	}
+	.pub_box li .pub_label div:nth-child(1){
+		width: 45px;
+		height: 45px;
+	}
+	.pub_box li .pub_label div:nth-child(1) span.check_m{
+		position: relative;
+		top: 9px;
+	}
+	.pub_box li .pub_label div:nth-child(2) span{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.pub_box li .pub_label div:nth-child(3){
+		width: 100%;
+	}
+	.pub_box li .pub_label div:nth-child(3) span{
+		font-size: 12px;
+		line-height: 12px;
+	}
+	.pub_box li .pub_label div:nth-child(3) em, .pub_box li .pub_label div:nth-child(3) font{
+		font-size: 28px;
+		line-height: 28px;
+	}
+	.pub_box li .pub_label div:nth-child(3) em font, .pub_box li .pub_label div:nth-child(3) font font{
+		font-size: 18px;
+		line-height: 18px;
+	}
+	.pub_box li .pub_label div:nth-child(3) p{
+		font-size: 11px;
+		padding-bottom: 10px;
+	}

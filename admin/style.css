@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+* {
+	margin:0;
+	padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+	color: #333;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+	color: #333;
+}
+
+body{
+	font-size:12px;
+	line-height: 16px;
+	color:#333333;
+	font-family:"メイリオ",ＭＳ Ｐゴシック,Osaka,Serif;
+	scrollbar-face-color: white; scrollbar-highlight-color:black;
+	scrollbar-shadow-color:black; scrollbar-3dlight-color: white;
+	scrollbar-arrow-color: black; scrollbar-track-color: white;
+	scrollbar-darkshadow-color: white;
+	padding: 15px 0 200px;
+    text-align: center;
+}
+
+.base{
+	margin: 0 auto;
+}
+
+h3{
+	width:100%;
+	background:#dddddd;
+	text-align:center;
+	font-size:13px;
+	line-height:24px;
+	font-weight:normal;
+    margin-bottom: 30px;
+}
+
+
+.base_table{
+	background: #ccc;
+    margin: 0 auto;
+}
+
+.base_table th{
+	background-color: #f5f5f5;
+    padding:5px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.base_table td{
+	background-color: #fff;
+    padding:5px;
+    text-align: left;
+}
+
+.base_table .bt_s{
+	padding:5px 2px;
+	width:29px;
+}
+
+/*re_link*/
+.re_link{
+	padding:0 10px 10px 10px;
+	display: flex;
+	justify-content: flex-start;
+    align-items: center;
+}
+
+.re_link a:nth-child(1){
+	font-size: 0;
+	line-height: 0;
+}
+
+.re_link a:nth-child(1) img{
+	height: 40px;
+	width: auto;
+}
+
+.re_link a:nth-child(2){
+	height: 40px;
+	padding: 5px 10px;
+	margin-left: 10px;
+    background: #ececec;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    font-size: 12px;
+    line-height: 16px;
+    border: 1px solid #ccc;
+}
+
+/*page*/
+#page{
+	margin		: 25px auto 15px;
+	width		: 700px;
+	text-align	: center;
+	font-size	: 14px;
+}
+
+#page span{
+	padding		: 7px;
+	height		: 20px;
+	line-height	: 20px;
+	background	: #eee;
+	border		: 1px solid #eee;
+	color		: #333;
+}
+
+#page a{
+	color		: #f4188a;
+	padding		: 7px;
+	height		: 20px;
+	line-height	: 20px;
+	border		: 1px solid #eee;
+}
+
+#page a:hover{
+	color		: #fff;
+	padding		: 7px;
+	background	: #fbabc6;
+}
+
+/*toptext*/
+.toptxt{
+    margin:0 auto 30px;
+    text-align: left;
+    width: 250px;
+}
+
+.toptxt span{
+    color: #ff0000;
+}
+
+/*resu_pop_text*/
+#resu_pop_text{
+    text-align: center;
+    position: fixed;
+    top:calc(50% - 120px/2);
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+#resu_pop_text p{
+    display: inline-block;
+    padding: 50px 50px;
+    color: #fff;
+    background: rgba(255, 0, 0, 0.95);
+    min-width: 300px;
+    margin: 0 auto;
+    font-size: 20px;
+	line-height: 26px;
+	font-weight: bold;
+	border: 1px solid #ff0000;
+	border-radius: 5px;
+}

@@ -1,0 +1,21 @@
+#edit_form{
+    width: 600px;
+    margin:0 auto 100px;
+}
+
+#edit_table{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#edit_table th{
+    width: 100px;
+}
+
+#edit_table input{
+    width: 100%;
+}
+
+#edit_table input[name="brand_code"]{
+    width: 60px;
+}

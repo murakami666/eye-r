@@ -1,0 +1,179 @@
+
+h1{
+	position: absolute;
+	top: -50vh;
+}
+
+
+/** login **/
+
+#login_bg{
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	height: 100svh;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+-webkit-background-size: 3px 3px;
+-moz-background-size: 3px 3px;
+background-size: 3px 3px;
+background-color: #ececec;
+background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+            color-stop(.25, #ffffff), color-stop(.25, transparent),
+            color-stop(.5, transparent), color-stop(.5, #ffffff),
+            color-stop(.75, #ffffff), color-stop(.75, transparent),
+            to(transparent));
+background-image: -webkit-linear-gradient(-45deg, #ffffff 25%, transparent 25%,
+          transparent 50%, #ffffff 50%, #ffffff 75%,
+          transparent 75%, transparent);
+background-image: -moz-linear-gradient(-45deg, #ffffff 25%, transparent 25%,
+          transparent 50%, #ffffff 50%, #ffffff 75%,
+          transparent 75%, transparent);
+background-image: -ms-linear-gradient(-45deg, #ffffff 25%, transparent 25%,
+          transparent 50%, #ffffff 50%, #ffffff 75%,
+          transparent 75%, transparent);
+background-image: -o-linear-gradient(-45deg, #ffffff 25%, transparent 25%,
+          transparent 50%, #ffffff 50%, #ffffff 75%,
+          transparent 75%, transparent);
+background-image: linear-gradient(-45deg, #ffffff 25%, transparent 25%,
+          transparent 50%, #ffffff 50%, #ffffff 75%,
+          transparent 75%, transparent);
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#login{
+	width: 420px;
+	text-align: center;
+	background: #fff;
+	border-radius: 10px;
+	padding: 50px 40px 40px 40px;
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.05);
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+#login > img{
+	display: inline-block;
+	width: 100%;
+	max-width: 300px;
+	vertical-align: top;
+	margin: 0 0 30px 0;
+}
+
+#login > h2{
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;
+	margin: 0 0 10px 0;
+}
+#login > h2 em{
+	position: relative;
+	font-style: normal;
+}
+#login > h2 em:before,
+#login > h2 em:after{
+	content: "";
+	width: 20px;
+	height: 3px;
+	background: #ccc;
+	position: absolute;
+	top: 8px;
+}
+#login > h2 em:before{	left: -28px;}
+#login > h2 em:after{	right: -28px;}
+
+#login > p{
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 0 30px 0;
+}
+
+#login .boxtxt{	margin: 30px 0 0 0;}
+#login .boxtxt p{
+	position: relative;
+	font-size: 11px;
+	line-height: 15px;
+	text-align: left;
+	margin: 0 0 5px 0;
+	padding: 0 0 0 12px;
+}
+#login .boxtxt p:last-of-type{	margin-bottom: 0;}
+#login .boxtxt p span{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.lint_btn{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 300px;
+	height: 65px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 20px;
+	border-radius: 5px;
+	color: #fff;
+	background: #00b900;
+	-webkit-transition	: 0.2s ease-in-out;
+	-moz-transition	: 0.2s ease-in-out;
+	-o-transition	: 0.2s ease-in-out;
+	transition		: 0.2s ease-in-out;
+}
+.lint_btn:visited{	color: #fff;}
+.lint_btn:hover{
+	text-decoration: none;
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.lint_btn img{
+	width: 40px;
+	height: auto;
+}
+
+
+
+/*=================================================
+ * CSS for SP
+ * ================================================= */
+
+@media screen and (max-width: 650px) {
+
+	h1{
+		position: absolute;
+		top: -50vh;
+	}
+
+
+	/** login **/
+	#login_bg{
+		padding: 15px;
+	}
+	#login{
+		width: auto;
+		padding: 20px;
+	}
+	#login > img{
+		margin: 0 0 20px 0;
+	}
+	#login > h2{
+		font-size: 18px;
+		margin: 0 0 30px 0;
+	}
+	#login > p{
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0 0 30px 0;
+	}
+}
+

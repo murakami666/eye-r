@@ -1,0 +1,153 @@
+.menu_box{
+    display: flex;
+    justify-content: center;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.menu_box .box{
+    padding: 0 5px;
+    border-right: 1px solid #ccc;
+}
+
+.menu_box .box:last-of-type{
+    border-right: none;
+}
+
+.menu_box .box h1{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    background	: #ececec;
+    text-align: left;
+	color		: #333;
+	padding		: 5px 0 5px 15px;
+	width		: 240px;
+	border-bottom	: 1px solid #ccc;
+    position: relative;
+}
+
+.menu_box .box h1:before{
+	content:'';
+	height:3px;
+	width:3px;
+	background:#333;
+	display:block;
+	position:absolute;
+	top:calc(50% - 4px);
+	left:5px;
+	box-shadow:4px 0 0 #333, 0 4px 0 #333, 4px 4px 0 #333;    
+}
+
+.menu_box .box p{
+	font-size	: 12px;
+	margin		: 0px;
+	margin-left	: 15px;
+	padding		: 5px 0 5px 15px;
+    text-align: left;
+}
+
+.menu_box .box div{
+    font-size	: 12px;
+	margin		: 0px;
+	margin-left	: 15px;
+	padding		: 5px 0 5px 15px;
+    position: relative;
+    text-align: left;
+}
+
+.menu_box .box div:before{
+    content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3px 0 3px 5px;
+	border-color: transparent transparent transparent #232323;
+	position: absolute;
+	top: calc(50% - 3px);
+	left: 4px;
+}
+
+
+
+.menu_box .box div a{
+	color: #0000ee;
+}
+
+.menu_box .box div.up a span{
+	color:#17c186;
+}
+
+.menu_box .box div.dw a span{
+	color:#ff3333;
+}
+
+/*rireki*/
+
+.top_box{
+	margin:0 auto 30px;
+}
+
+.top_box .box h1{
+	width: 1000px;
+}
+
+.top_box .box{
+	padding: 0 !important;	
+}
+
+.top_box .box dl{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.top_box .box dl dt{
+	width: calc(980px / 3);
+	border-bottom: 1px dotted #ccc;
+	padding: 5px 0 5px 16px;
+	margin-right: 10px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	position: relative;
+	text-align: left;
+}
+
+.top_box .box dl dt:nth-of-type(3n){
+	margin-right: 0;
+}
+
+.top_box .box dt::before,
+.top_box .box dt::after{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	content: "";
+	vertical-align: middle;
+}
+
+.top_box .box dt::before{
+	width: 12px;
+	height: 12px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #7a0;
+}
+
+.top_box .box dt::after{
+	left: 5px;
+	box-sizing: border-box;
+	width: 3px;
+	height: 3px;
+	border: 3px solid transparent;
+	border-left: 3px solid #fff;
+}
+
+/*re_link*/
+.re_link{
+	width: 1000px;
+	margin: 0 auto;
+	padding-left: 0;
+}

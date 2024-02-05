@@ -1,0 +1,5 @@
+AuthUserFile /var/www/html/eye-r.com/admin/.htpasswd
+AuthGroupFile /dev/null
+AuthName "eye-R ADMIN"
+AuthType Basic
+require valid-user

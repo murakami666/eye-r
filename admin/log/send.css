@@ -1,0 +1,30 @@
+.list_table{
+    width: 800px;
+}
+
+.list_table tr th{
+    text-align: center;
+}
+
+.list_table tr th:nth-child(1){
+    width: auto;
+}
+
+.list_table tr th:nth-child(2){
+    width: 70px;
+}
+
+.list_table tr th:nth-child(3){
+    width: 120px;
+}
+
+.list_table tr th:nth-child(4){
+    width: 100px;
+}
+
+.list_table tr td{
+    text-align: center;
+}
+.list_table tr td:nth-child(1){
+    text-align: left;
+}

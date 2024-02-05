@@ -1,0 +1,51 @@
+#edit_form{
+    margin-bottom: 30px;
+}
+.edit_table{
+    width: 600px;
+    margin-bottom: 15px;
+}
+
+.edit_table th{
+    width: 100px;
+}
+
+.edit_table input[name="info_year"]{
+    width: 60px;
+    margin-right: 5px;
+}
+
+.edit_table select[name="info_mon"]{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.edit_table select[name="info_day"]{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.edit_table textarea{
+    width: 100%;
+    padding: 5px;
+}
+
+.list_table{
+    width: 600px;
+}
+
+.list_table th{
+    text-align: center;
+}
+
+.list_table th:nth-child(1){
+    width: 120px;   
+}
+
+.list_table td:nth-child(2){
+    width: auto;
+}
+
+.list_table td:nth-child(1){
+    text-align: center;
+}
